@@ -2,7 +2,7 @@ name: Greeting
 on: push
 jobs:
   greet:
-    runs-on: windows-letest
+    runs-on: ubuntu-latest
     steps:
       - name: "great user"
         run:  echo "hello word!"
