@@ -1,0 +1,11 @@
+name: Deploy Dist
+on: [push,workflow_dispatch]
+jobs:
+  test:
+    runs-on: windows-letest
+    steps:
+      - name: Get code
+        run:  
+          echo "cloning report"
+          echo "${{tojson(github)}}"
+          git clon https://github.com/${{github.repository}}.git
